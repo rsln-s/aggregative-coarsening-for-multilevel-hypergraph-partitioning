@@ -1,0 +1,3 @@
+Put run.py and copy of zdrive executables (take the entire directory /build/.../driver) into a directory containing .mtx graph files. 
+It will generate input files according to hardcoded parameters and then run Zoltan on them
+Output is a .csv file

@@ -1,0 +1,52 @@
+/* Define if want to build teuchos-complex */
+#cmakedefine HAVE_SACADO_COMPLEX
+
+/* Define if want to build with uninit */
+#cmakedefine HAVE_SACADO_UNINIT
+
+/* Define if ADOL-C is enabled */
+#cmakedefine HAVE_ADOLC
+
+/* Define if ADIC is enabled */
+#cmakedefine HAVE_ADIC
+
+/* define if we want to use MPI */
+#cmakedefine HAVE_MPI
+
+/* Define if want to build sacado-examples */
+#cmakedefine HAVE_SACADO_EXAMPLES
+
+/* Define if want to build sacado-tests */
+#cmakedefine HAVE_SACADO_TESTS
+
+/* Define if want to build with teuchos enabled */
+#cmakedefine HAVE_SACADO_TEUCHOS
+
+/* Define if want to build with kokkos-core enabled */
+#cmakedefine HAVE_SACADO_KOKKOSCORE
+
+/* Define if want to build with kokkos-containers enabled */
+#cmakedefine HAVE_SACADO_KOKKOSCONTAINERS
+
+/* Define if want to build with TeuchosKokkosComm subpackage enabled */
+#cmakedefine HAVE_SACADO_TEUCHOSKOKKOSCOMM
+#ifdef HAVE_SACADO_TEUCHOSKOKKOSCOMM
+// For backwards compatibility
+#  define HAVE_SACADO_KOKKOSMPICOMM
+#endif // HAVE_SACADO_TEUCHOSKOKKOSCOMM
+
+/* Define if want to enable Kokkos view specializations for Sacado */
+#cmakedefine HAVE_SACADO_VIEW_SPEC
+
+/* define if the compiler is confused by std::sin, etc., within namespace
+   Sacado::Rad */
+#cmakedefine RAD_NO_USING_STDCC
+
+/* Define to enable extra debugging checks */
+#cmakedefine SACADO_DEBUG
+
+/* Define if compiler supports c99 tr1 cmath functions */
+#cmakedefine HAS_C99_TR1_CMATH
+
+/* Define to enable C++11 support*/
+#cmakedefine HAVE_SACADO_CXX11
