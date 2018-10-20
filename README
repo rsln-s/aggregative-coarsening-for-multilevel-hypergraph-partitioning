@@ -27,7 +27,9 @@ make
 
 Notes on algorithms:
 
-The paper describes two versions, inner-product coarsening and stable matching coarsening. By default, when run with PHG_COARSENING_METHOD=rs_alg_dist, the inner product coarsening is used. The code for stable matching is provided only for reproducibility purposes; stable matching based coarsening doesn't produce better results and is more computationally expensive (especially in this inefficient implementation). To use it, go to `packages/zoltan/src/phg/rs_amg_match.cpp` and uncomment `#define RS_STABLE_MATCHING`
+The paper describes two versions, inner-product coarsening and stable matching coarsening. By default, when run with PHG_COARSENING_METHOD=rs_alg_dist, the inner product coarsening is used. The code for stable matching is provided only for reproducibility purposes; stable matching based coarsening doesn't produce better results and is more computationally expensive (especially in this inefficient implementation). To use it, go to `packages/zoltan/src/phg/rs_amg_match.cpp` and uncomment `#define RS_STABLE_MATCHING`. 
+
+Note that both algorithm only work in serial (when run with one process).
 
 ===================
 
